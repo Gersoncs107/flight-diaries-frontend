@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { DiaryEntry } from './types'
+import type { DiaryEntry } from './types'
 import diaryService from './services/diaryService'
 
 function App() {
