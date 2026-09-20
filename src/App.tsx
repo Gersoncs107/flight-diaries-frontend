@@ -14,6 +14,16 @@ function App() {
 
   return (
     <div>
+
+      <AddDiaryForm onSubmit={(values) => {
+        // Here you would typically send the new diary entry to your backend
+        // and then update the state with the new entry. For now, we'll just log it.
+        console.log('New diary entry:', values);
+      }} />
+
+      <h1>Flight Diaries</h1>
+      <p>Welcome to the Flight Diaries app! Here you can add and view your flight experiences.</p>
+      <p>Use the form above to add a new diary entry.</p>
       <h2>Flight Diaries</h2>
       {diaries.map(diary => (
         <div key={diary.id}>
