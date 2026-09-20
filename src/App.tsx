@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { DiaryEntry } from './types'
 import diaryService from './services/diaryService'
+import AddDiaryForm from './components/AddDiaryForm'
 
 function App() {
   const [diaries, setDiaries] = useState<DiaryEntry[]>([])

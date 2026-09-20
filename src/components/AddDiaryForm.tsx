@@ -69,3 +69,5 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
     </form>
   );
 };
+
+export default AddDiaryForm;
