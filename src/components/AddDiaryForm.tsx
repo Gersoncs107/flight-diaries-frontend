@@ -11,9 +11,12 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
   const [visibility, setVisibility] = useState("");
   const [comment, setComment] = useState("");
 
-    const handleSubmit = (event: React.FormEvent) => {
-      event.preventDefault();
-      const values: DiaryFormValues = { date, weather, visibility, comment };
-      onSubmit(values);
-    };
+    const AddDiary = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+    onSubmit({ date, weather, visibility, comment });
+    setDate("");
+    setWeather("");
+    setVisibility("");
+    setComment("");
+  }
 }  
