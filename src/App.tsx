@@ -12,13 +12,16 @@ function App() {
     })
   }, [])
 
+  const addDiary = (values: DiaryFormValues) => {
+  diaryService.create(values).then(data => {
+    setDiaries(diaries.concat(data));
+  });
+};
+
   return (
     <div>
 
-      <AddDiaryForm onSubmit={(values) => {
-        // Here you would typically send the new diary entry to your backend
-        // and then update the state with the new entry. For now, we'll just log it.
-        console.log('New diary entry:', values);
+      <AddDiaryForm onSubmit={(values) => {addDiary(values)
       }} />
 
       <h1>Flight Diaries</h1>
