@@ -7,8 +7,8 @@ interface AddDiaryFormProps {
 
 const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
   const [date, setDate] = useState("");
-  const [weather, setWeather] = useState("");
-  const [visibility, setVisibility] = useState("");
+  const [weather, setWeather] = useState("sunny");
+  const [visibility, setVisibility] = useState("great");
   const [comment, setComment] = useState("");
 
     const AddDiary = (event: React.SyntheticEvent) => {
