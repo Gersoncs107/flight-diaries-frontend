@@ -7,4 +7,8 @@ const getAll = () => {
   return axios.get<DiaryEntry[]>(baseUrl).then(response => response.data);
 };
 
-export default { getAll };
+const create = (newDiary: DiaryFormValues) => {
+  return axios.post<DiaryEntry>(baseUrl, newDiary).then(response => response.data);
+}
+
+export default { getAll, create };
