@@ -1,5 +1,5 @@
 export interface DiaryEntry {
-  id: string;
+  id: SVGAnimatedNumber;
   date: string;
   weather: string;
   visibility: string;
