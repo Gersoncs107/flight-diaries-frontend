@@ -11,7 +11,7 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
   const [visibility, setVisibility] = useState("great");
   const [comment, setComment] = useState("");
 
-    const AddDiary = (event: React.SyntheticEvent) => {
+    const addDiary = (event: React.SyntheticEvent) => {
     event.preventDefault();
     onSubmit({ date, weather, visibility, comment });
     setDate("");
@@ -21,7 +21,7 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
   }
 
     return (
-    <form onSubmit={AddDiary}>
+    <form onSubmit={addDiary}>
       <div>
         <label htmlFor="date">Date:</label>
         <input
