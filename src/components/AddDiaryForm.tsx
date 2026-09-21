@@ -68,6 +68,6 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
       <button type="submit">Add Diary Entry</button>
     </form>
   );
-};
+}; 
 
 export default AddDiaryForm;
