@@ -33,16 +33,12 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
       </div>
       <div>
         <label htmlFor="weather">Weather:</label>
-        <select
+        <input
           id="weather"
           value={weather}
           onChange={(e) => setWeather(e.target.value)}
         >
-          <option value="sunny">Sunny</option>
-          <option value="rainy">Rainy</option>
-          <option value="cloudy">Cloudy</option>
-          <option value="stormy">Stormy</option>
-        </select>
+        </input>
       </div>
       <div>
         <label htmlFor="visibility">Visibility:</label>
