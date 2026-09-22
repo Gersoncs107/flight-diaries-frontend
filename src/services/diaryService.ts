@@ -8,7 +8,13 @@ const getAll = () => {
 };
 
 const create = (newDiary: DiaryFormValues) => {
-  return axios.post<DiaryEntry>(baseUrl, newDiary).then(response => response.data);
-}
+
+  try {
+    const response = axios.post<DiaryEntry>(baseUrl, newDiary);
+    return response.then(response => response.data);
+  } catch (error) {
+    throw new Error('Failed to create diary entry');
+  }
+};
 
 export default { getAll, create };
