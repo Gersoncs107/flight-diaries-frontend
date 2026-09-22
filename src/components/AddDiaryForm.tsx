@@ -42,12 +42,12 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
       </div>
       <div>
         <label htmlFor="visibility">Visibility:</label>
-        <textarea
+        <input
           id="visibility"
           value={visibility}
           onChange={(e) => setVisibility(e.target.value)}
-        />
-        
+        >
+        </input>
       </div>
       <div>
         <label htmlFor="comment">Comment:</label>
