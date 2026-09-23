@@ -50,6 +50,8 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
         <label htmlFor="great">Great</label>
         <input type="radio" id="good" name="visibility" value="good" onChange={(e) => setVisibility(e.target.value)} />
         <label htmlFor="good">Good</label>
+        <input type="radio" id="ok" name="visibility" value="ok" onChange={(e) => setVisibility(e.target.value)} />
+        <label htmlFor="ok">OK</label>
         <input type="radio" id="poor" name="visibility" value="poor" onChange={(e) => setVisibility(e.target.value)} />
         <label htmlFor="poor">Poor</label>
       </div>
