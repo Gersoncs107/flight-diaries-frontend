@@ -33,7 +33,7 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
       </div>
       <div>
         <label htmlFor="weather">Weather:</label>
-        <input
+        <input type ="radio"
           id="weather"
           value={weather}
           onChange={(e) => setWeather(e.target.value)}
