@@ -39,6 +39,9 @@ const AddDiaryForm = ({ onSubmit }: AddDiaryFormProps) => {
         <label htmlFor="cloudy">Cloudy</label>
         <input type="radio" id="rainy" name="weather" value="rainy" onChange={(e) => setWeather(e.target.value)} />
         <label htmlFor="rainy">Rainy</label>
+        <input type="radio" id="stormy" name="weather" value="stormy" onChange={(e) => setWeather(e.target.value)} />
+        <label htmlFor="stormy">Stormy</label>
+        <input type="radio" id="windy" name="weather" value="windy" onChange={(e) => setWeather(e.target.value)} />
       </div>
       <div>
         <label htmlFor="visibility">Visibility:</label>
